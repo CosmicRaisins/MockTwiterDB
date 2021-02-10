@@ -25,15 +25,33 @@ public interface JankyTweetAPI {
 
   /**
    * retrieve a user's own tweets.
-   * @param user
-   * @return
+   * @param user the user whose follows will be retrieved
+   * @return an ArrayList of Strings representing all the users that the user follows.
    */
   ArrayList<String> getFollows(String user);
 
-  public void insertOneTweet(Tweet tweet);
+  /**
+   * insert one tweet into the database.
+   * @param tweet the tweet to be inserted
+   */
+  void insertOneTweet(Tweet tweet);
 
-  public void insertXTweets(ArrayList<Tweet> tweets);
+  /**
+   * insert multiple tweets to the database
+   * @param tweets the list of tweets to be inserted
+   */
+  void insertXTweets(ArrayList<Tweet> tweets);
 
-  public void addOneFollow(String[] follow);
+  /**
+   * add one follower for a user.
+   * @param follow an array representing who follows who
+   */
+  void addOneFollow(String[] follow);
+
+  /**
+   * add multiple follower for a user.
+   * @param follow A list of arrays of pairs of followers and followees
+   */
+  void addXFollows(ArrayList<String[]> follow);
 
 }

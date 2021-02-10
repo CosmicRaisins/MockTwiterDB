@@ -9,10 +9,19 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+/**
+ * a class that represent a MySQL based tweeter database solution.
+ */
 public class SimpleTweetMySQL implements JankyTweetAPI {
 
   private Connection connection;
 
+  /**
+   * constructs a MySQL tweet database API.
+   * @param address the address of the database to be connected
+   * @param user username to access the database
+   * @param password password to access the database
+   */
   public SimpleTweetMySQL(String address, String user, String password) {
     try {
       this.connection = DriverManager.getConnection(
@@ -23,7 +32,6 @@ public class SimpleTweetMySQL implements JankyTweetAPI {
   }
 
   @Override
-
   public ArrayList<Tweet> getTimeline(String user, int numTweets) {
     ResultSet resultSet = null;
     ArrayList<Tweet> tweets = new ArrayList<>();
@@ -50,14 +58,6 @@ public class SimpleTweetMySQL implements JankyTweetAPI {
 
 
 
-
-
-  /**
-   *
-   * @param user
-   * @param numTweets
-   * @return
-   */
   @Override
   public ArrayList<Tweet> getTweets(String user, int numTweets) {
 
@@ -80,6 +80,8 @@ public class SimpleTweetMySQL implements JankyTweetAPI {
     return tweets;
   }
 
+
+
   @Override
   public ArrayList<String> getFollows(String user) {
 
@@ -98,6 +100,8 @@ public class SimpleTweetMySQL implements JankyTweetAPI {
     return follows;
   }
 
+
+
   @Override
   public void insertOneTweet(Tweet tweet) {
     String sql = String.format(
@@ -110,6 +114,8 @@ public class SimpleTweetMySQL implements JankyTweetAPI {
       e.printStackTrace();
     }
   }
+
+
 
   @Override
   public void insertXTweets(ArrayList<Tweet> tweets) {
@@ -140,6 +146,11 @@ public class SimpleTweetMySQL implements JankyTweetAPI {
     }
   }
 
+
+  /**
+   * reads tweets from a file and add to database one tweet at a time.
+   * @param file file path of the tweets
+   */
   private void addFollowerMethod1(String file) {
     BufferedReader reader;
     String line;
@@ -154,6 +165,12 @@ public class SimpleTweetMySQL implements JankyTweetAPI {
     }
   }
 
+
+  /**
+   * reads follow information from a file and add to database multiple tweets at a time.
+   * @param file file path of the followers
+   * @param x batch size
+   */
   private void addFollowerMethod2(String file, int x) {
     BufferedReader reader;
     ArrayList<String[]> toAdd = new ArrayList<>();
@@ -195,8 +212,8 @@ public class SimpleTweetMySQL implements JankyTweetAPI {
   }
 
 
-
-  private void addXFollows(ArrayList<String[]> follow) {
+  @Override
+  public void addXFollows(ArrayList<String[]> follow) {
     StringBuilder sql = new StringBuilder("INSERT INTO followers (user_id,follows_id) VALUES ");
     String[] first = follow.remove(0);
     sql.append(String.format("(%s,%s)", first[0], first[1]));
@@ -215,7 +232,11 @@ public class SimpleTweetMySQL implements JankyTweetAPI {
   }
 
 
-
+  /**
+   * reads tweets from a file and add to database multiple tweets at a time.
+   * @param file file path of the tweets
+   * @param x batch size
+   */
   private void addTweetsMethod2(String file, int x) {
     BufferedReader reader;
     ArrayList<Tweet> toAdd = new ArrayList<>();

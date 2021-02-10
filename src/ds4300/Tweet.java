@@ -1,5 +1,8 @@
 package ds4300;
 
+/**
+ * a class tha represents a tweet in the mock twitter database.
+ */
 public class Tweet {
 
   private String tweetID;
@@ -8,17 +11,21 @@ public class Tweet {
   private String content;
 
   /**
-   *
-   * @param tweetID
-   * @param userID
-   * @param datetime
-   * @param content
+   * constructs a tweet
+   * @param tweetID id for the tweet
+   * @param userID id for the user who tweeted
+   * @param datetime the date and time this tweet is sent
+   * @param content the textual content of the tweet. cannot exceed 140 characters.
    */
   public Tweet(String tweetID, String userID, String datetime, String content) {
     this.tweetID = tweetID;
     this.userID = userID;
     this.datetime = datetime;
-    this.content = content;
+    if (content.length() <= 140) {
+      this.content = content;
+    } else {
+      throw new IllegalArgumentException("Tweet cannot exceed 140 characters.");
+    }
   }
 
   @Override
