@@ -1,7 +1,9 @@
 # MockTwiterDB
 Explore the performance limit of relational database with a Mock Twitter database and 1 million tweets.
 # Schema
-
+Twitter:
+tweets: tweet_id(BIGINT), user_id(BIGINT), tweet_ts(DATETIME), tweet_text(VARCHAR140)
+followers: user_id(BIGINT), follows_id(BIGINT)
 # PC Specs
 CPU: AMD Ryzen Threadripper 2950X 16-Core @4.00 GHz
 RAM: 32GB @3200 MHz
