@@ -1,232 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c070598-8748-4612-8fe4-6dc2f8ac29e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ds4300/DateTime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ds4300/JankyTweetAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ds4300/JankyTweetAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ds4300/SimpleTweetMySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ds4300/SimpleTweetMySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ds4300/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ds4300/Tweet.java" afterDir="false" />
+    <list default="true" id="4d1bbcb3-c53b-45c9-b303-c568b2555798" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MockTwitterDBFinal.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/.~lock.tweets.csv#" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/Database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/Tweet_UserGeneration.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/followers.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/tweets.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ds4300/LessJankyTweetAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ds4300/SimpleTweetMySQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ds4300/SimpleTweetRedisStrat1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ds4300/SimpleTweetRedisStrat2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ds4300/Tweet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ds4300/LessJankyTweetAPI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ds4300/SimpleTweetMySQL.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ds4300/SimpleTweetRedisStrat1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ds4300/SimpleTweetRedisStrat2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ds4300/Tweet.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ds4300/JankyTweetAPI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/Tweet&amp;UserGeneration.ipynb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1008" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/followers.csv">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/Database.sql">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ds4300/Tweet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="17" column="83" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
-              <folding>
-                <element signature="e#1009#1010#0" expanded="true" />
-                <element signature="e#1063#1064#0" expanded="true" />
-                <element signature="e#1121#1122#0" expanded="true" />
-                <element signature="e#1177#1178#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ds4300/SimpleTweetMySQL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>popu</find>
-      <find>executeBat</find>
-      <find>populat</find>
-      <find>toAdd</find>
-      <find>follow</find>
-      <find>addX</find>
-      <find>INSERT</find>
-      <find>insert</find>
-      <find>addTweets</find>
-    </findStrings>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/SimpleTweetGenerator.java" />
-        <option value="$PROJECT_DIR$/src/TweetGenerator.java" />
-        <option value="$PROJECT_DIR$/src/TextBank.java" />
-        <option value="$PROJECT_DIR$/src/Tweets.java" />
-        <option value="$PROJECT_DIR$/src/MySQLUtil.java" />
-        <option value="$PROJECT_DIR$/src/main.java" />
-        <option value="$PROJECT_DIR$/src/ListUtil.java" />
-        <option value="$PROJECT_DIR$/src/ds4300/MySQLUtil.java" />
-        <option value="$PROJECT_DIR$/src/ds4300/twitter/SimpleJankyTweetDB.java" />
-        <option value="$PROJECT_DIR$/src/Tweet.java" />
-        <option value="$PROJECT_DIR$/src/DateTime.java" />
-        <option value="$PROJECT_DIR$/src/SimpleJankyTweetDB.java" />
-        <option value="$PROJECT_DIR$/src/JankyTweetAPI.java" />
-        <option value="$PROJECT_DIR$/src/ds4300/SimpleJankyTweetDB.java" />
-        <option value="$PROJECT_DIR$/src/ds4300/Tweet.java" />
-        <option value="$PROJECT_DIR$/src/ds4300/JankyTweetAPI.java" />
-        <option value="$PROJECT_DIR$/src/ds4300/SimpleTweetMySQL.java" />
-      </list>
-    </option>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1294" />
-    <option name="height" value="1047" />
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MockTwiterDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockTwiterDB" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockTwiterDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockTwiterDB" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockTwiterDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockTwiterDB" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockTwiterDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockTwiterDB" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="TweeterRDB" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockTwiterDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockTwiterDB" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="TweeterRDB" type="462c0819:PsiDirectoryNode" />
-              <item name="ds4300" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockTwiterDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockTwiterDB" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockTwiterDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockTwiterDB" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MockTwiterDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MockTwiterDB" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ds4300" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectId" id="1odmOKRYysTlarRK7vJ55DTBP4B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ds4300" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.SimpleJankyTweetDB">
-    <configuration name="SimpleJankyTweetDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ds4300.twitter.SimpleJankyTweetDB" />
-      <module name="TweeterRDB" />
+  <component name="RunManager" selected="Application.SimpleTweetRedisStrat1Less">
+    <configuration name="SimpleTweetRedisStrat1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ds4300.SimpleTweetRedisStrat1" />
+      <module name="MockTwitterDBFinal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ds4300.LessJankyTweetAPI" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleTweetMySQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ds4300.SimpleTweetMySQL" />
-      <module name="TweeterRDB" />
+    <configuration name="SimpleTweetRedisStrat2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ds4300.SimpleTweetRedisStrat2" />
+      <module name="MockTwitterDBFinal" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ds4300.*" />
+          <option name="PATTERN" value="ds4300.LessJankyTweetAPI" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -236,251 +101,31 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SimpleTweetMySQL" />
-        <item itemvalue="Application.SimpleJankyTweetDB" />
+        <item itemvalue="Application.SimpleTweetRedisStrat1Less" />
+        <item itemvalue="Application.SimpleTweetRedisStrat2Less" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8c070598-8748-4612-8fe4-6dc2f8ac29e7" name="Default Changelist" comment="" />
-      <created>1612638019946</created>
+      <changelist id="4d1bbcb3-c53b-45c9-b303-c568b2555798" name="Default Changelist" comment="" />
+      <created>1613624810775</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1612638019946</updated>
+      <updated>1613624810775</updated>
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12680578" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32902467" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2467685" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32902467" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3278496" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info active="true" anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.32982087" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.38181818" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" />
-      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-    </layout-to-restore>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TweeterRDB$SimpleJankyTweetDB.ic" NAME="SimpleJankyTweetDB Coverage Results" MODIFIED="1612809701344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO43253C16/DBUtils.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO43246ED6/DPDatabaseMysql.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO432387D6/Patient.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO432AA3C6/DBUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/SimpleTweetGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/src/TextBank.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO0DCF7D73/Login.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO0DCF0BE3/DAO.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO432C2322/DPDatabaseMysql.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO4326BBD6/DPDatabaseAPI.java" />
-    <entry file="file://$PROJECT_DIR$/TweeterRDB.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO0DCFC48B/Sale.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO0DC7288B/SaleModel.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO0DCB2754/Customer.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO0DCABE34/Login.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO0DCB109B/CarModel.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO0DC7EEEB/DAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO432E0A50/DBUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/ListUtil.java" />
-    <entry file="file://$PROJECT_DIR$/src/ds4300/MySQLUtil.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/7zO432B7B93/DPDatabaseMysql.java" />
-    <entry file="file://$PROJECT_DIR$/resources/Tweet&amp;UserGeneration.ipynb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1008" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/followers.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/Database.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ds4300/DateTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <folding>
-            <element signature="e#1459#1460#0" expanded="true" />
-            <element signature="e#1480#1481#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-            <element signature="e#1529#1530#0" expanded="true" />
-            <element signature="e#1554#1555#0" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ds4300/Tweet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="17" column="83" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
-          <folding>
-            <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1177#1178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ds4300/JankyTweetAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ds4300/SimpleTweetMySQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>TweeterRDB</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

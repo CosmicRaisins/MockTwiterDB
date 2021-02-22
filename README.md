@@ -8,7 +8,35 @@ followers: user_id(BIGINT), follows_id(BIGINT)
 CPU: AMD Ryzen Threadripper 2950X 16-Core @4.00 GHz  
 RAM: 32GB @3200 MHz  
 Storage: Samsung 850 EVO M.2 SSD, read @ 520 MB/s, write @ 540 MB/  
-# Current Design
+
+# Redis implementation
+Tweets are stored in String-String pairs.  
+Key: “tweet:userID:tweetID” Value: “tweetDatetime:tweetContent”  
+
+In strategy 1, a users’ follows is stored in String-Set<String> pairs.  
+Key: “follow:userID” Value: Set(“userID1”, “userID2”, ..., “userIDn”)  
+In strategy 2, an additional follower pair is used to store users’ followers.  
+Key: “follower:userID” Value: Set(“userID1”, “userID2”, ..., “userIDn”)  
+In strategy 2, a String-List pair is used for a user’s timeline to maintain tweets’
+datetime order. The tweet keys of the user’s home timeline is stored in the list.  
+Key: “timeline:userID” Value: List(tweetKey1, tweetKey2, ..., tweetKeyn)  
+
+Obeservations:
+Pipelining significantly increased insertion performance with strategy one
+and led to a five-fold speed increase compared to the similarly implemented MySQL
+strategy.  
+The getHomeTimeline method in strat1 first iterated over a user’s every
+follow’s tweetKey and parsed/stored them in a TreeMap which is constantly trimed
+according to the desired timeline length. It then retrieved values with those keys
+and built and returned a list of custom Tweet class. The performance poor compared
+to MySQL implementation possibly due to no secondary indexing.  
+I could not get pipelining or multi to work with strat2 as Redis does not
+allow the use of intermediate results of a transaction within the same transaction.
+Could there be a clever workaround?  
+Using mget for strat2’s timeline method allowed for a fast and simple
+implementation.
+
+# MySQL implementation
 Generated tweets akin to "I can eat glass it doesnt hurt me." with word banks and a custom sentence generator.  
 user_id represented by integers.  
 500 users, each follows around 50 people. The amount of followers each person has follows a standard distribution.  
@@ -19,11 +47,4 @@ Timeline retrieval speed: 1.67 timelines/s
 
 Batch insertion dramatically increased insertion rate. I was really confused as the previous speed was around 300 per second but my CPU usage was barely 5%.  
 Indexing the tweets table increased Timeline retrieval speed by from around 3 second per timeline to 0.56 second per timeline.  
-
-# Changes from previous Iteration
-1. User_id generation was more complex using a system inspired by Xbox Live's gamer tag system with the same word banks. Examples: "TastyWater3344" "AvuncularIce4894" "CosmicVeggies9375." This was later sacrificed for performance and an integer based system was used instead. Such a shame, I really loved how the wacky names and tweets worked together.
-
-2. Tried retrieving the top 10% of the whole tweet database first before joining the followers table to increase timeline retrieval speed. Yielded significant improvement around 500%-1000% at the cost of accuracy. The performance difference was minimal after I discovered indexing....
-
-3. Inserted multiple tweets with one update. This dramatically increased insertion performance by over 200 times. Batch size influences performance with a significant diminishing return after 2000 tweets per update. "executeBatch" from JDBC was also experimented with but yielded little to no performance increase at the cost of dry eyes and neck pain.
 
